@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Acceuil</title>
+</head>
+<body>
+    <main>
+        <section>
+            <article>
+            <h2>Exercice 1</h2>
+            <table>
+            <th>Horraires</th>
+            <tr>
+                <th>Heure</th>
+                <th>Cours</th>
+            </tr>
+            <tr>
+                <td>8h</td>
+                <td>Français</td>
+            </tr>
+            <tr>
+                <td>10h</td>
+                <td>Anglais</td>
+            </tr>
+            <tr>
+                <td>12h</td>
+                <td>Histoire</td>
+            </tr>
+            <tr>
+                <td>14h</td>
+                <td>Art plastique</td>
+            </tr>
+            </table>
+        </article>
+        <article>
+            <h2>Exercice 2</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th rowspan="2">Nom</th>
+                        <th colspan="3">Notes</th>
+                    </tr>
+                    <tr>
+                        <th>Maths</th>
+                        <th>Anglais</th>
+                        <th>Moyenne</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ada</td>
+                        <td>15</td>
+                        <td>18</td>
+                        <td>16.5</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Classe</td>
+                        <td>15</td>
+                        <td>18</td>
+                        <td>16.5</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+        <article>
+            <h2>Exercice 3</h2> 
+            <table border="1">
+                <caption>Boutique de téléphone</caption>
+                <thead>
+                    <tr>
+                        <th>Catégories</th>
+                        <th>Produits</th>
+                        <th>Prix</th>
+                        <th>Stock</th>
+                        <th>Note des clients</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3">Smartphone</td>
+                        <td>Iphone 17</td>
+                        <td>2000$</td>
+                        <td>10</td>
+                        <td>5/5</td>
+                    </tr>
+                    <tr>
+                        <td>Iphone 16</td>
+                        <td>1700$</td>
+                        <td>8</td>
+                        <td>4/5</td>
+                    </tr>
+                    <tr>
+                        <td>Iphone 15</td>
+                        <td>1500$</td>
+                        <td>7</td>
+                        <td>3/5</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+            </table>
+        </article>
+        </section>
+         <!-- L'exercice 4 commence ici -->
+        <section>
+            <article>
+                <!-- Comme vous pouvez le voir je met tous mes <tables> dans une div
+                    parce que de ce que j'ai compris on peut pas appliquer
+                    une bordure en css à <table> donc je met ma table dans une div
+                    pour ensuite lui appliqué en css une bordure qui fera tout le
+                    tour des <table> -->
+                <div>
+                    <table>
+                    <tbody>
+                        <!-- Ici j'ai mis un th et un td dans un tr pour qu'ils soient
+                         face à face comme dans l'exemple proposé par le prof et je répète ça
+                         5 fois comme il y'a 5 colones -->
+                        <tr>
+                            <th>Rang</th>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th>Equipe</th>
+                            <td>Les Octets</td>
+                        </tr>
+                        <tr>
+                            <th>Ville</th>
+                            <td>Lyon</td>
+                        </tr>
+                        <tr>
+                            <th>Points</th>
+                            <td>128</td>
+                        </tr>
+                        <tr>
+                            <th>Victoires</th>
+                            <td>6</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+                <div>
+                    <table>
+                    <tbody>
+                        <tr>
+                            <th>Rang</th>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <th>Equipe</th>
+                            <td>Script Kids</td>
+                        </tr>
+                        <tr>
+                            <th>Ville</th>
+                            <td>Nantes</td>
+                        </tr>
+                        <tr>
+                            <th>Points</th>
+                            <td>117</td>
+                        </tr>
+                        <tr>
+                            <th>Victoires</th>
+                            <td>5</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+                <div>
+                    <table>
+                    <tbody>
+                        <tr>
+                            <th>Rang</th>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <th>Equipe</th>
+                            <td>Balises Folles</td>
+                        </tr>
+                        <tr>
+                            <th>Ville</th>
+                            <td>Toulouse</td>
+                        </tr>
+                        <tr>
+                            <th>Points</th>
+                            <td>111</td>
+                        </tr>
+                        <tr>
+                            <th>Victoires</th>
+                            <td>4</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

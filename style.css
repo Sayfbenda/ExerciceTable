@@ -1,0 +1,63 @@
+main > section{
+    display: flex;
+    justify-content: space-around;
+}
+/* L'exerice 4 commence ici */
+
+/* section:nth-child(2) vise la deuxième section dans main donc celle ou j'ai tout mes <tables> */
+/* donc j'applique à article display flex etc pour qu'ils soient affichés de haut en bas */
+main > section:nth-child(2) > article{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* Donc comme j'ai expliqué dans le html j'applique la bordure grise à toutes mes div qui sont dans article
+je leur applique une border radius pour faire l'arrondi et enfin je fais une bordure spéciale à gauche avec la couleur verte */
+main > section:nth-child(2) > article > div{
+    border: 1px solid gray;
+    border-radius: 10px;
+    border-left: 4px solid green;
+    border-radius: 10px;
+}
+/* Ici j'ai appliqué à toutes mes tables border-collapse qui va servir à séparer toutes les bordures de ma table
+si il y'a pas border-collapse sa ne marche pas*/
+main > section:nth-child(2) > article > div > table{
+    border-collapse: collapse;
+}
+/* La j'applique à tout mes tr une bordure en bas qui est "dashed" dont en pointiée de la couleur grise*/
+main > section:nth-child(2) > article > div > table > tbody > tr{
+    border-bottom: 1px dashed gray;
+}
+/* La je défini juste la largeur de mon td donc la colone de droite*/
+main > section:nth-child(2) > article > div > table > tbody > tr > td{
+    width: 20vw;
+}
+/* et la je défini la largeur de la colone de gauche et j'alligne mon texte à gauche*/
+main > section:nth-child(2) > article > div > table > tbody > tr > th{
+    width: 9vw;
+    text-align: left;
+}
+/* La j'alligne mon texte à droite pour le 5 eme tr donc "Victoires"*/
+main > section:nth-child(2) > article > div > table > tbody > tr:nth-child(5) > td{
+    text-align: right;
+}
+/* La je retire la border-bottom la bordure en bas de la dernière tr pour évité de faire
+une double bordure à la fin*/
+main > section:nth-child(2) > article > div > table > tbody > tr:nth-child(5){
+    border-bottom: none;
+}
+/* La j'alligne mon dernier th à droite donc sa correpond à "6" "5" "4" dans le tableau*/
+/* tr:nth-child(5) signifie que je prend le 5ème tr de chaque tableau*/
+main > section:nth-child(2) > article > div > table > tbody > tr:nth-child(5) > th{
+    text-align: right;
+}
+/* tr:nth-child(4) signifie que je prend le 4ème tr de chaque tableau*/
+/* et j'alligne mes td à droite donc dans le tableau c'est "117" "128" "111"*/
+main > section:nth-child(2) > article > div > table > tbody > tr:nth-child(4) > td{
+    text-align: right;
+}
+/* tr:nth-child(4) signifie que je prend le 4ème tr de chaque tableau*/
+/* et j'alligne mon th à droite donc dans le tableau c'est "Points"*/
+main > section:nth-child(2) > article > div > table > tbody > tr:nth-child(4) > th{
+    text-align: right;
+}
